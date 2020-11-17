@@ -134,10 +134,10 @@ def toIntegerfromHereditary(number_as_hereditary, base):
 
 
 #%%
-def genGoodsteinSequence(number):
+def genGoodsteinSequence(number, initialBase=2):
     ''' Generator that returns the next element of the Goodstein sequence.
     ############################################### '''
-    base = 2
+    base = initialBase
     representation = toHereditaryBaseNotation(number, base)
     nextVal = number
     while nextVal > 0:
